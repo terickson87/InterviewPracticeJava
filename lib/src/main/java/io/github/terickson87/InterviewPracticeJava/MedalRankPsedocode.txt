@@ -1,0 +1,27 @@
+funtion getRanksFromScores(scores: number[]): sring[] {
+  // Sort scores Array
+  const sortedScores = scores.sort().reverse(); // Assuming sort is least to greatest
+  const sortedScoresToOrinalIndexMap = new Map();
+  
+  // Convert into ranks
+  let ranks: string[] = [];
+  for (const score in scores) {
+    // find index of score in sortedScores
+	const index = sortedScores.findIndex(score);
+	const position = index + 1;
+    switch(true) {
+		case position == 1:
+		  rank.push("Gold Medal");
+		  break;
+		case position == 2:
+		  rank.push("Silver Meda");
+		  break;
+		case position == 3:
+		  rank.push("Bronze Medall");
+		  break;
+		otherwise:
+		  rank.push("${position}");
+	end
+	
+	return ranks;
+}
