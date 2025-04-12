@@ -1,0 +1,16 @@
+year,state,month,number
+2008,Maranhao,Agosto,713
+2009,Tocantins,Maio,91
+2008,Pernambuco,Março,32
+2007,Paraiba,Janeiro,11
+2007,Piau,Setembro,4
+2008,Santa Catarina,Dezembro,29
+2009,Distrito Federal,Fevereiro,0
+2007,Sergipe,Novembro,7
+2009,Goias,Junho,179
+2008,Rio,Fevereiro,25
+
+year,number
+2009,270
+2008,713
+2007,22
