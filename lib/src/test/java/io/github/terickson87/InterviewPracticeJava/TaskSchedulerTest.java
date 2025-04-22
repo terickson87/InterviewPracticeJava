@@ -33,11 +33,20 @@ public class TaskSchedulerTest {
     }
 
     @Test
-    public void test1() {
+    public void failingTest1() {
         char[] tasks = {'A','B','A'};
         int waitTime = 2;
         int out = TaskScheduler.leastInterval(tasks, waitTime);
         int expected = 4;
+        assertEquals(expected, out);
+    }
+
+    @Test
+    public void failingTest2() {
+        char[] tasks = {'B','C','D','A','A','A','A','G'};
+        int waitTime = 1;
+        int out = TaskScheduler.leastInterval(tasks, waitTime);
+        int expected = 8;
         assertEquals(expected, out);
     }
 }

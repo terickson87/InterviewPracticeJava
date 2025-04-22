@@ -21,7 +21,9 @@ public class TaskScheduler {
         }
         
         void decrementGapIntervalsRemaining() {
-            this.gapIntervalsRemaining--;
+            if (this.gapIntervalsRemaining > 0) {
+                this.gapIntervalsRemaining--;
+            }
             return;
         }
         
