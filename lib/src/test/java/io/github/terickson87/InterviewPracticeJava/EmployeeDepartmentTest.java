@@ -4,12 +4,13 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 
 import org.junit.jupiter.api.Test;
 
 public class EmployeeDepartmentTest {
     @Test
-    public void testEmployeeDepName() throws InterruptedException {
+    public void testEmployeeDepName() throws InterruptedException, ExecutionException {
         List<EmployeeDepName> employeeDepNames = EmployeeDepartment.getEmployeesWithDepNames();
         List<EmployeeDepName> expected = new ArrayList<>();
         expected.add(new EmployeeDepName(1, "Tom", "Dep1"));
